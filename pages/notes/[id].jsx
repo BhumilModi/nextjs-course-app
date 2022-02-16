@@ -15,7 +15,7 @@ export default Note;
 
 export async function getServerSideProps({ params, req, res }) {
   const response = await fetch(
-    `https://nextjs-course-app-murex-two.vercel.app/api/note/${params.id}`
+    `https://nextjs-course-app-murex-two.vercel.app/api/notes/${params.id}`
   );
 
   if (!response.ok) {
